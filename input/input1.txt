@@ -1,0 +1,4 @@
+112233
+balance
+withdraw 10
+deposit 100
