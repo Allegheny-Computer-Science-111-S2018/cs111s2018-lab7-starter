@@ -38,14 +38,14 @@ following characteristics of your implementation:
 
 * The `Atm` program must:
   * Contain at least five single-line comments and two multi-line comments
-  * Includes one `new Date()` statements
-  * Call methods of the other provided class as outlined in the assignment sheet
+  * Uses at least two `if` statements
+  * Use `int` and `String` variables
+  * Call methods of the other provided class and print the output
 
 * The `Account` program must:
-  * Contain at least four multi-line comments
-  * Not include any `new Date()` statements
+  * Contain at least five multi-line comments
   * Not include any `println` statements
-  * Perform computations as outlined in the textbook and the assignment sheet
+  * Include `withdraw`, `deposit` and `checkBalance` methods as outlined in the assignment sheet
 
 When you use the `git commit` command to transfer your source code to your
 GitHub repository, [Travis CI](https://travis-ci.com/) will initialize a build
@@ -109,20 +109,6 @@ program's source code if it is a correct program) the program using the command
 To run one of these commands, you must be in the main directory for this
 assignment where the `build.gradle` file is located. Then, you can type the
 command in the terminal and study the output.
-
-## Output
-
-One or both of the provided source code files for this assignment contain
-defects. As such, the output for the program will be incorrect when you receive
-the preliminary versions of the files. Please see the description of the
-programming projects at the end of Chapter 3 in your textbook for a description
-of the purpose of the methods that you have to fix. Once you have read these
-descriptions you will better be able to understand what the output should look
-like. When you are testing your program, please make sure that you regularly
-edit the input file to try different inputs. That is, the initial inputs that
-are provided to your team may not be suitable for finding all of the defects.
-Please see the course instructor if you do not understand something about how to
-fix the defective programs so that they ultimately produce the correct output.
 
 ## Travis
 
