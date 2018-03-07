@@ -1,5 +1,4 @@
 1122336543
-checking
 2310870
 balance
 deposit 1000
