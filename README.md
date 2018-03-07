@@ -1,5 +1,5 @@
 
-# cs111s2018-lab7-solution
+# cs111s2018-lab7-starter
 
 Designed for use with [GitHub Classroom](https://classroom.github.com/), this
 repository contains the solution for Laboratory 7 in Computer Science 111.
@@ -38,14 +38,16 @@ following characteristics of your implementation:
 
 * The `Atm` program must:
   * Contain at least five single-line comments and two multi-line comments
-  * Uses at least two `if` statements
-  * Use `int` and `String` variables
-  * Call methods of the other provided class and print the output
+  * Use at least two `if` statements
+  * Contain at least eight `println` statements to display output
+  * Call methods of the other provided class 
 
 * The `Account` program must:
   * Contain at least five multi-line comments
   * Not include any `println` statements
-  * Include `withdraw`, `deposit` and `checkBalance` methods as outlined in the assignment sheet
+  * Include `accountNumber` and `balance` instance variables
+  * Include a constructor as specified by the UML diagram in the assignment sheet
+  * Include `withdraw`, `deposit` and `getBalance` methods as outlined in the assignment sheet
 
 When you use the `git commit` command to transfer your source code to your
 GitHub repository, [Travis CI](https://travis-ci.com/) will initialize a build
@@ -76,8 +78,7 @@ guides will help you to understand how to use both [GitHub](http://github.com) a
 
 To do well on this assignment, you should also review Chapters 1 through 3 and study
 Sections 4.1 through 4.5. To enhance your understanding of some points in this
-laboratory assignment, you should also review the class exercise and the handout 
-related to `Account` and `Bank` programs. Please see
+laboratory assignment, you should also review the class exercise. Please see
 the course instructor or one of the teaching assistants or tutors if you have
 questions about any of these reading assignments.
 
@@ -134,7 +135,7 @@ developed for the following software and versions:
 
 If you have found a problem with this assignment's provided source code, then
 you can go to the [Computer Science 111 Lab 7
-Starter](https://github.com/Allegheny-Computer-Science-111-S2017/cs111s2018-lab7-starter)
+Starter](https://github.com/Allegheny-Computer-Science-111-S2018/cs111s2018-lab7-starter)
 repository and create an issue by clicking the "Issues" tab and then clicking
 the green "New Issue" button. If you have found a problem with the [GatorGrader
 tool](https://github.com/gkapfham/gatorgrader) and the way that it checks you

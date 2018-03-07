@@ -155,37 +155,42 @@ if [ "$CHECK" = true ]; then
   # --> GatorGrader CHECK: the correct number of comments in the Java code
   python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/labseven/ \
                                      --checkfiles Account.java --multicomments 5 --language Java
+  determine_exit_code $?  
+  # --> GatorGrader CHECK: the "Account" fragment exists in the code at least twice
+  python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/labseven \
+                                     --checkfiles Atm.java --fragments "Account" --fragmentcounts 2
   determine_exit_code $?
-  # --> GatorGrader CHECK: the "int" fragment exists in the code at least twice
+  # --> GatorGrader CHECK: at least 8 "println()" fragments exist in the code
   python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/labseven \
-                                     --checkfiles Atm.java --fragments "int" --fragmentcounts 2
-  # --> GatorGrader CHECK: the “String” fragment exists in the code at least twice
-  python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/labseven \
-                                     --checkfiles Atm.java --fragments “String” --fragmentcounts 2
-  determine_exit_code $?
-  # --> GatorGrader CHECK: at least 4 "println()" fragments exist in the code
-  python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/labseven \
-                                     --checkfiles Atm.java --fragments "println(" --fragmentcounts 4
+                                     --checkfiles Atm.java --fragments "println(" --fragmentcounts 8
   determine_exit_code $?
   # --> GatorGrader CHECK: at least 2 "if" fragments exist in the code
   python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/labseven \
                                      --checkfiles Atm.java --fragments "if" --fragmentcounts 2
   determine_exit_code $?
-  # --> GatorGrader CHECK: at least one “withdraw” fragment exists in the code
+  # --> GatorGrader CHECK: at least 1 "getBalance" fragment exists in the code
   python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/labseven \
-                                     --checkfiles Atm.java --fragments “withdraw” --fragmentcounts 1
+                                     --checkfiles Atm.java --fragments "getBalance" --fragmentcounts 2
   determine_exit_code $?
-  # --> GatorGrader CHECK: at least one “deposit” fragment exists in the code
+  # --> GatorGrader CHECK: at least 1 "withdraw" fragment exists in the code
   python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/labseven \
-                                     --checkfiles Atm.java --fragments “deposit” --fragmentcounts 1
+                                     --checkfiles Atm.java --fragments "withdraw" --fragmentcounts 1
   determine_exit_code $?
-  # --> GatorGrader CHECK: at least one “checkBalance” fragments exist in the code
+  # --> GatorGrader CHECK: at least 1 "getBalance" fragment exists in the code
   python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/labseven \
-                                     --checkfiles Atm.java --fragments “checkBalance” --fragmentcounts 1
+                                     --checkfiles Atm.java --fragments "deposit" --fragmentcounts 1
   determine_exit_code $?
   # --> GatorGrader CHECK: there are no "println()" fragment exists in the code
   python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/labseven \
                                      --checkfiles Account.java --fragments "println(" --fragmentcounts 0
+  determine_exit_code $?
+  # --> GatorGrader CHECK: at least 1 "accountNumber" fragment exists in the code
+  python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/labseven \
+                                     --checkfiles Account.java --fragments "accountNumber" --fragmentcounts 1
+  determine_exit_code $?
+  # --> GatorGrader CHECK: at least 1 "balance" fragment exists in the code
+  python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/labseven \
+                                     --checkfiles Account.java --fragments "balance" --fragmentcounts 1
   determine_exit_code $?
   # --> GatorGrader CHECK: there is one "public Account" fragment exists in the code
   python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/labseven \
